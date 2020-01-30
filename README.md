@@ -1,53 +1,47 @@
 ---
-page_type: sample
+page_type: sample & dataset
 languages:
-- csharp
-products:
-- dotnet
-description: "Add 150 character max description"
-urlFragment: "update-this-to-unique-url-stub"
+- matlab
+description: "Exterior acoustic scattering data suitable for machine learning"
+urlFragment: "acoustic-scattering-data"
 ---
 
-# Official Microsoft Sample
+# Acoustic Scattering Data
 
-<!-- 
-Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
+This repo contains synthetic acoustic scattering data as octave-band loudness fields, generated from a wave solver for a random set of convex prism shapes, and associated Matlab (TM) parsing and visualization sample scripts. The data was employed in the following paper.
 
-Guidance on onboarding samples to docs.microsoft.com/samples: https://review.docs.microsoft.com/help/onboard/admin/samples/process/onboarding?branch=master
-
-Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
--->
-
-Give a short description for your sample here. What does it do and why is it important?
+Ziqi Fan, Vibhav Vineet, Hannes Gamper, Nikunj Raghuvanshi, <br/>**Fast Acoustic Scattering using Convolution Neural Networks,** <br/>*IEEE ICASSP, 2020*
 
 ## Contents
+For each type of dataset, there are folders for input binary image representing shape as occupancy grid and output as a four-channel image representing scattered spatial loudness maps in four octave bands, with pixels occupied by shape represented by `NaN` values. See the referenced paper for more details. 
 
-Outline the file contents of the repository. It helps users navigate the codebase, build configuration and any related assets.
-
-| File/folder       | Description                                |
-|-------------------|--------------------------------------------|
-| `src`             | Sample source code.                        |
-| `.gitignore`      | Define what to ignore at commit time.      |
-| `CHANGELOG.md`    | List of changes to the sample.             |
-| `CONTRIBUTING.md` | Guidelines for contributing to the sample. |
+| File/folder       | Description                         |
+|-------------------|-------------------------------------|
+| `Train`          | Training data                        |
+| `Val`            | Validation data      |
+| `Test`           | Test data      |
+| `Stretch`        | Generalization tests on analytic shapes       |
+| `Visualization/visualizeData.m` | Function illustrating parsing and visualizing the data. Takes two arguments: name of dataset and an array for indices of instances within the dataset|
 | `README.md`       | This README file.                          |
+| `CONTRIBUTING.md` | Guidelines for contributing to the sample. |
 | `LICENSE`         | The license for the sample.                |
 
 ## Prerequisites
 
-Outline the required components and tools that a user might need to have on their machine in order to run the sample. This can be anything from frameworks, SDKs, OS versions or IDE releases.
+Scripts were tested on Matlab v2017b.
 
-## Setup
+## Citing/Bibtex
+If you employ the dataset, please cite the following paper.
 
-Explain how to prepare the sample once the user clones or downloads the repository. The section should outline every step necessary to install dependencies and set up any settings (for example, API keys and output folders).
-
-## Running the sample
-
-Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
-
-## Key concepts
-
-Provide users with more context on the tools and services used in the sample. Explain some of the code that is being used and how services interact with each other.
+```
+@InProceedings{Fan_MLScattering:2020,
+author = {Fan, Ziqi and Vineet, Vibhav and Gamper, Hannes and Raghuvanshi, Nikunj},
+title = {Fast Acoustic Scattering using Convolution Neural Networks},
+booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+year = {2020},
+month = {May},
+}
+```
 
 ## Contributing
 
