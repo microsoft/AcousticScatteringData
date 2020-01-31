@@ -8,7 +8,7 @@ urlFragment: "acoustic-scattering-data"
 
 # Acoustic Scattering Data
 
-This repo contains synthetic acoustic scattering data as octave-band loudness fields, generated from a wave solver for a random set of convex prism shapes, and associated Matlab (TM) parsing and visualization sample scripts. The data was employed in the following paper.
+This repo contains synthetic acoustic scattering data for a random set of convex prism shapes represented as loudness fields in four octave bands, along with Matlab (TM) parsing and visualization sample scripts. The data was employed in the following paper.
 
 Ziqi Fan, Vibhav Vineet, Hannes Gamper, Nikunj Raghuvanshi, <br/>**Fast Acoustic Scattering using Convolution Neural Networks,** <br/>*IEEE ICASSP, 2020*
 
@@ -17,7 +17,7 @@ For each type of dataset, there are folders for input binary image representing 
 
 | File/folder       | Description                         |
 |-------------------|-------------------------------------|
-| `Train`          | Training data                        |
+| `Train`          | Training data (zipped)              |
 | `Val`            | Validation data      |
 | `Test`           | Test data      |
 | `Stretch`        | Generalization tests on analytic shapes       |
