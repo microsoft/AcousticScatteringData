@@ -8,7 +8,7 @@ urlFragment: "acoustic-scattering-data"
 
 # Acoustic Scattering Data
 
-This repo contains synthetic acoustic scattering data for a random set of convex prism shapes represented as loudness fields in four octave bands, along with Matlab (TM) parsing and visualization sample scripts. The data was employed in the following paper.
+This repository contains synthetic acoustic scattering data for a random set of convex prism shapes represented as loudness fields in four octave bands, along with Matlab (TM) parsing and visualization sample scripts. The data was employed in the paper:
 
 Ziqi Fan, Vibhav Vineet, Hannes Gamper, Nikunj Raghuvanshi, <br/>**Fast Acoustic Scattering using Convolutional Neural Networks,** <br/>*IEEE ICASSP, 2020*
 
@@ -24,14 +24,13 @@ For each type of dataset, there are folders for input binary image representing 
 | `Visualization/visualizeData.m` | Function illustrating parsing and visualizing the data. Takes two arguments: name of dataset and an array for indices of instances within the dataset|
 | `README.md`       | This README file.                          |
 | `CONTRIBUTING.md` | Guidelines for contributing to the sample. |
-| `LICENSE`         | The license for the sample.                |
 
 ## Prerequisites
 
 Scripts were tested on Matlab v2017b.
 
-## Citing/Bibtex
-If you employ the dataset, please cite the following paper.
+## Citing
+If you employ the dataset, please cite using Bibtex key below.
 
 ```
 @InProceedings{Fan_MLScattering:2020,
@@ -42,6 +41,9 @@ year = {2020},
 month = {May},
 }
 ```
+
+## License
+The data and associated code are being released under the [Open Use of Data Agreement](https://github.com/microsoft/Open-Use-of-Data-Agreement/blob/master/O-UDA-1.0.md), with the intention of promoting open research using this dataset.
 
 ## Contributing
 
