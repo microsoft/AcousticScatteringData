@@ -8,9 +8,9 @@ urlFragment: "acoustic-scattering-data"
 
 # Acoustic Scattering Data
 
-This repository contains synthetic acoustic scattering data for a random set of convex prism shapes represented as loudness fields in four octave bands, along with Matlab (TM) parsing and visualization sample scripts. The data was employed in the paper:
+This repository contains synthetic acoustic scattering data for a random set of convex prism shapes represented as loudness fields in four octave bands, along with Matlab (TM) parsing and visualization sample scripts. The data was employed in [the paper](https://arxiv.org/abs/1911.01802):
 
-Ziqi Fan, Vibhav Vineet, Hannes Gamper, Nikunj Raghuvanshi, <br/>**Fast Acoustic Scattering using Convolutional Neural Networks,** <br/>*IEEE ICASSP, 2020*
+Ziqi Fan, Vibhav Vineet, Hannes Gamper, Nikunj Raghuvanshi, <br/>[**Fast Acoustic Scattering using Convolutional Neural Networks,**](https://arxiv.org/abs/1911.01802) <br/>*IEEE ICASSP, 2020*
 
 ## Contents
 For each type of dataset, there are folders for input binary image representing shape as occupancy grid and output as a four-channel image representing scattered spatial loudness maps in four octave bands, with pixels occupied by shape represented by `NaN` values. See the referenced paper for more details. 
